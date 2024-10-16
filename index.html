@@ -3,33 +3,49 @@
 <head>
 <style type="text/css">
 #journal{
-	width: 200px;
-	height:200px;
-	background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFd6z1O6hwi4IfiVg_hy3tySjQhP1HTxWljA&s);
+	width: 300px;
+	height:300px;
+	background-image:url(https://i.scdn.co/image/ab67616d0000b27358ae8fddecbd2630005409c9);
 	background-size: contain;
 	background-repeat: no-repeat;
+		display:inline-block;
 }
 
 #projects{
-	width: 200px;
-	height:200px;
+	background-position:center;
+	width: 300px;
+	height:300px;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url(https://upload.wikimedia.org/wikipedia/en/5/5b/Ken_Carson_Project_X_cover.jpeg);}
+	background-image: url(https://upload.wikimedia.org/wikipedia/en/5/5b/Ken_Carson_Project_X_cover.jpeg);
+display:inline-block;
+transition:2s;
+}
+
+
+
 #projects:hover{
 	background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Project_X_%28Original_Motion_Picture_Soundtrack%29.jpg/220px-Project_X_%28Original_Motion_Picture_Soundtrack%29.jpg);
-transition-duration: 1.2s}
+}
+
+
+#journal:hover{
+	background-position:center;
+	background-image: url(https://rukminim2.flixcart.com/image/750/900/j33br0w0/music/w/p/f/vinyl-universal-music-india-standard-edition-journals-original-imaeuatzmyzqezfp.jpeg?q=20&crop=false);
+transition-duration: 1.2s;}
 
 
 </style>
 
 </head>
 <body> 
+	<center>
 <a href="journal.html">
 <div id="journal"> </div>
 </a>
 <a href="projects.html">
 <div id="projects"></div>
 </a>
+</center>
 </body>
 </html>
