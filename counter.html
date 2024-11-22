@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<style type="text/css">
+		
+		.monies{
+			width:100px;
+			height:50px;
+			display:inline-block;
+			margin:5px;
+			background-image:url(https://a.1stdibscdn.com/archivesE/upload/1121189/j_177728821669816391804/17772882_datamatics.jpeg)
+		}
+	</style>
+</head>
+<body>
+
+<center>How much money is a billion dollars?</center>
+
+<script type="text/javascript">
+
+	var counter=0 //amount of variable at beginning//
+
+	
+function makeMoney (){ //tells computer what to do//
+	counter=counter+1 //everytime function is run the var "counter" increases by 1
+	let dollar = document.createElement("div") //creates a div for the function// //part 1 create a div//
+
+		document.body.appendChild(dollar) //puts dollar in the body// //part 2 put div in body//
+
+		dollar.classList.add('monies')//class of the div being created above//
+		dollar.innerText = counter
+
+}
+
+setInterval(makeMoney,1000) //setInterval is a function that will run the function "makeMoney" every 1000ms or every second--creating a div with the styling of "monies" and counting that every second//
+
+
+
+</script>
+
+</body>
+</html>

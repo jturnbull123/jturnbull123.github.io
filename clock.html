@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<style type="text/css">
+		
+		.monies{
+			width:100px;
+			height:50px;
+			background-color:green;
+			display:inline-block;
+			margin:5px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Usdollar100front.jpg/2560px-Usdollar100front.jpg);
+			background-size:cover;
+			font-size:40px;
+		}
+	</style>
+</head>
+<body>
+
+<center>How much money is a billion dollars?</center>
+
+<script type="text/javascript">
+
+	var counter=0
+
+	
+function makeMoney (){
+	counter=counter+1
+	let dollar = document.createElement("div") //part 1 create a div//
+
+		document.body.appendChild(dollar) //part 2 put div in body//
+
+		dollar.classList.add('monies')
+		dollar.innerText = counter
+
+}
+
+setInterval(makeMoney,1000)
+
+
+</script>
+
+</body>
+</html>
