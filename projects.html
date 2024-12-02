@@ -108,35 +108,59 @@
 				transition: 1s;
 				}
 		#counter{
-		height: 300px;
-		width: 300px;
-		background-image: url(https://m.media-amazon.com/images/I/819rkaCVWvL.jpg);
-		background-size: contain;
-		background-repeat: no-repeat;
-		transition: 1s;
-		display: inline-block;
-		margin: 10px;
-		}
+			height: 300px;
+			width: 300px;
+			background-image: url(https://m.media-amazon.com/images/I/819rkaCVWvL.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: 1s;
+			display: inline-block;
+			margin: 10px;
+			}
 			#counter:hover{
 				height: 300px;
 				width: 300px;
 				background-image: url(https://images.genius.com/c7e784a2c7b31686c16fcd36431574f8.929x929x1.jpg);
 				background-size: contain;
 				background-repeat: no-repeat;
+				transition: 1s;
 				}
+		#zac{
+			height: 300px;
+			width: 300px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url(https://i.discogs.com/CLb1PTfTQ9fVydqVu4ffeEF6jcg86OEFw47IZWloejk/rs:fit/g:sm/q:90/h:531/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Njk4/OTg1LTE1OTcyNzc0/NjAtMjQ5My5qcGVn.jpeg);
+			transition: 1s;
+			display: inline-block;
+			margin: 10px;
+			}
+			#zac:hover{
+				height: 300px;
+				width: 300px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-image: url(https://e.snmc.io/i/1200/s/cd003e599da114b31e7f0d1df68e1c8e/9178601);
+				transition: 1s;
+			}
 #bgrnd{
 	background-color: #433739;
 	position: absolute;
-	top: 0px;
-	bottom: 0px;
+	top: 0%;
+/*	bottom: 100%;*/
 	width: 100%;
+	height: 1000px;
 	z-index: -999;
+}
+
+body{
+	margin:0px;
 }
 
 #home{
 	height: 50px;
 	width: 50px;
-	background-image: url(https://cdn-icons-png.flaticon.com/512/93/93634.png);
+	background-image: url(backButton.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 }	
@@ -144,15 +168,22 @@
 	<title></title>
 </head>
 <body>
+
+<div id="bgrnd">
+	<a href="index.html">
+	<div id="home"></div>
+	</a>
 <a href="day2.html">
 	<div id="Frank"></div>
 </a>
-	<a href="javascript1.html">
-		<div id="functions"> </div>
-	</a>
-		<a href="jumpscare1.html">
-			<div id="jumpscare"></div>
-		</a>
+
+<a href="javascript1.html">
+<div id="functions"> </div>
+</a>
+
+<a href="jumpscare1.html">
+<div id="jumpscare"></div>
+</a>
 			<a href="positioning.html">
 				<div id="positions"></div>
 			</a>
@@ -165,9 +196,10 @@
 						<a href="counter.html">
 							<div id="counter"></div>
 						</a>
-							<a href="index.html">
-								<div id="home"></div>
-							</a>
-<div id="bgrnd"></div>
+							
+								<a href="random.html">
+									<div id="zac"></div>
+								</a>
+</div>
 </body>
 </html>
