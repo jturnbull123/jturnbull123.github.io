@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#shape{
+			height: 200px;
+			width: 200px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-color:blue;
+			background-image: 
+			position: absolute;
+			transition:.4s;
+		}
+	</style>
+</head>
+<body>
+
+<div id="shape">
+</div>
+
+<script type="text/javascript">
+	console.log(Math.random())
+
+
+	function move(){
+		let x = Math.random()*500+"px"
+		let y = Math.random()*500+"px"
+			shape.style.left = x
+			shape.style.top = y
+	}
+
+	function colorchange(){
+		let r = Math.random()*255
+		let g = Math.random()*255
+		let b = Math.random()*255
+
+	shape.style.backgroundColor = "rgb"("+r+","+g+","+b+",)
+		
+
+	}
+	setInterval(move, 400)
+	setInterval(colorchange, 400)
+</script>
+
+
+</body>
+</html>
