@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	#box{
+		height: 400px;
+		width: 1600px;
+		background-color: #acc1d3;
+	
+	}
+	#box2{
+		height: 400px;
+		width: 1600px;
+		background-color: #fad860;
+	}
+</style>
+</head>
+<body>
+<div id="box"></div>
+<div id="box2"></div>
+
+<script type="text/javascript">
+	let lightswitch = true
+	box.addEventListener("click",function(){
+		if(lightswitch==true){
+		box.style.backgroundColor="#fad860"
+		lightswitch = false
+	}
+		else if(lightswitch==false){
+			box.style.backgroundColor="#acc1d3"
+			lightswitch = true
+		}
+
+	})
+
+	box2.addEventListener("click",function(){
+		if(lightswitch==true){
+		box2.style.backgroundColor="#acc1d3"
+		lightswitch = false
+	}
+		else if(lightswitch==false){
+			box2.style.backgroundColor="#fad860"
+			lightswitch = true
+		}
+
+	})
+
+</script>
+
+<!--1. Make a div
+  2. name that div
+  3. make a css style section
+  4. give the div properties (height,width, etc.)
+  5. make a JavaScript section
+  6. add and EventListener so that when you click, something happens
+  7. add an IfElse statment to event listner so that when you click the div the color changes or something like that\\-->
+</body>
+</html>
