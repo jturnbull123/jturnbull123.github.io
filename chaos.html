@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#chaos{
+			width: 200px;
+			height: 200px;
+			background-color: black;
+			background-size: contain;
+			background-repeat: no-repeat;
+
+		}
+	#bgrnd{
+		position: absolute;
+		width: 100%;
+		height: 2000px;
+		top: 0px;
+		bottom: 0px;
+		background-color: #212121;
+		z-index: -1;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="bgrnd"></div>
+
+<audio id="song" src="toxic.mp3"></audio>
+
+	<div id="box"></div>
+
+
+
+<center><div id="chaos"></div></center>
+
+
+
+<script type="text/javascript">
+
+	
+let counter = 0;
+
+chaos.addEventListener("click",
+	function(){
+		counter=counter+1;
+
+		if(counter%2==0){
+			song.pause()
+		chaos.style.backgroundImage="url()"
+		chaos.style.backgroundColor="black"
+
+		}
+		else if (counter%2==1){
+			song.play()
+	chaos.style.backgroundImage="url(https://i.scdn.co/image/ab67616d0000b2733b494c1b464d41ef641de442)"
+
+		}
+	})
+// chaos.addEventListener("click", function(){
+// 	counter=counter+1;
+
+// 	if (counter%2==0) {
+// 	}
+
+// 	if(counter%2==1){
+// 	}
+
+// })
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

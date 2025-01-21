@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	.box{
+		display: inline-block;
+		border: 1px solid black;
+		width: 300px;
+		height: 300px;
+		margin: 4px;
+		background-size:contain;
+		background-position:center;
+		border-radius: 25%;
+	}
+
+	#lever{
+		display: inline-block;
+		border: 1px solid black;
+		width: 150px;
+		height: 150px;
+		margin: 4px;
+		border-radius: 30%;
+		background-color: maroon;
+	}
+	#bgrnd{
+		z-index: -199;
+		background-color: black;
+		height: 1100px;
+		width: 100%;
+		position: absolute;
+		top: 0%;
+		bottom: 0%;
+	}
+	#scoreboard{
+		width: 150px;
+		height: 100px;
+		border: 1px white;
+		margin: 4px;
+	
+	}
+</style>
+</head>
+<body>
+<div class="box" id="box1"></div>
+<div class="box" id="box2"></div>
+<div class="box" id="box3"></div>
+
+<div id="lever"></div>
+<div id="bgrnd"></div>
+<div id="scoreboard"></div>
+
+<script type="text/javascript">
+
+	let rappers = ["url(2hollis.png)","url(2k.png)","url(bladee.png)","url(carti.png)","url(doechii.png)","url(dom.png)","url(kdot.png)","url(lean.png)","url(nicki.png)","url(peggy.png)","url(trav.png)","url(wsg.png)","url(ye.png)"]
+lever.addEventListener("click", function(){
+		let random1 = Math.round(Math.random()*rappers.length)
+		let random2 = Math.round(Math.random()*rappers.length)
+		let random3 = Math.round(Math.random()*rappers.length)
+
+		box1.style.backgroundImage = rappers[random1]
+		box2.style.backgroundImage = rappers[random2]
+		box3.style.backgroundImage = rappers[random3]
+
+
+	
+
+})
+
+</script>
+</body>
+</html>
