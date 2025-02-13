@@ -2,7 +2,7 @@
 <html>
 <head>
 	<style type="text/css">
-		#shape{
+			.squares{
 			height: 200px;
 			width: 200px;
 			background-repeat: no-repeat;
@@ -12,6 +12,7 @@
 			position: absolute;
 			transition:.4s;
 		}
+
 	</style>
 </head>
 <body>
@@ -26,8 +27,8 @@
 	function move(){
 		let x = Math.random()*500+"px"
 		let y = Math.random()*500+"px"
-			shape.style.left = x
-			shape.style.top = y
+			squares.style.left = x
+			squares.style.top = y
 	}
 
 	function colorchange(){
@@ -35,12 +36,21 @@
 		let g = Math.random()*255
 		let b = Math.random()*255
 
-	shape.style.backgroundColor = "rgb("+ r + "," +g+","+b+ ")"
+	squares.style.backgroundColor = "rgb("+ r + "," +g+","+b+ ")"
 		
 
 	}
 	setInterval(move, 400)
 	setInterval(colorchange, 400)
+
+	function makeMoney (){ //tells computer what to do//
+	counter=counter+1 //everytime function is run the var "counter" increases by 1
+	let dollar = document.createElement("div") //creates a div for the function// //part 1 create a div//
+
+		document.body.appendChild(dollar) //puts dollar in the body// //part 2 put div in body//
+
+		dollar.classList.add('squares')//class of the div being created above//
+		dollar.innerText = counter}
 </script>
 
 
