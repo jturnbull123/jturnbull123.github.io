@@ -2,9 +2,9 @@
 <html>
 <head>
 	<style type="text/css">
-			.squares{
-			height: 200px;
-			width: 200px;
+			#shape{
+			height: 1000px;
+			width: 1500px;
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-color:blue;
@@ -16,7 +16,6 @@
 	</style>
 </head>
 <body>
-
 <div id="shape">
 </div>
 
@@ -27,8 +26,8 @@
 	function move(){
 		let x = Math.random()*500+"px"
 		let y = Math.random()*500+"px"
-			squares.style.left = x
-			squares.style.top = y
+			shape.style.left = x
+			shape.style.top = y
 	}
 
 	function colorchange(){
@@ -36,7 +35,7 @@
 		let g = Math.random()*255
 		let b = Math.random()*255
 
-	squares.style.backgroundColor = "rgb("+ r + "," +g+","+b+ ")"
+	shape.style.backgroundColor = "rgb("+ r + "," +g+","+b+ ")"
 		
 
 	}
