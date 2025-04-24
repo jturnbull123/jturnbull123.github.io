@@ -6,16 +6,77 @@
 	background-color: #000000;
 	position: absolute;
 	top: 0%;
-	bottom: 0%;
 	width: 100%;
-	height: 100% ;
-	z-index: -999;
+	height: 800px;
+	z-index: -99;
 	border-left: 75px;
-	border-left-color:#8ACE00 ;}
+	border-left-color:#8ACE00;
+}
+
+		#cd{
+			height: 500px;
+			width: 500px;
+			background-repeat: no-repeat;
+			background-size: contain;
+	background-image: url(https://i.ebayimg.com/images/g/gh8AAOSwAgNgzEWK/s-l1200.jpg);
+	border-radius: 100%;
+		}
+
+		#playbutton{
+			z-index: 100;
+	height: 100px;
+	width: 100px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgAY1K1682_xtGI7di8Jfn5t78DrfTCCPIXw&s);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin:20px;
+		}
+
 	</style>
+
 
 </head>
 <body>
-<div id=bgrnd></div>
+<div id=bgrnd>
+<center>
+	<div id="cd"></div>
+<br><br>
+<div id="playbutton"></div>
+</center>
+
+ </div> <!--end of background -->
+<audio id="nikes" src="01 Nikes.mp3"></audio>
+
+
+
+
+<script type="text/javascript">
+
+	
+let counter = 0;
+
+playbutton.addEventListener("click", function(){
+		console.log("hi judah!")
+		counter=counter+1;
+
+		if(counter%2==0){
+			nikes.pause()
+			cd.style.transform ="rotate(0deg)";
+			cd.style.transition= "5s"
+
+		}
+		else if (counter%2==1){
+			nikes.play()
+			cd.style.transform= "rotate(1400000000000000000deg)"
+			cd.style.transition= "20s"
+		}
+
+})
+
+
+
+
+</script>
+
 </body>
 </html>
