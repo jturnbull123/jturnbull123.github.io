@@ -13,7 +13,7 @@
 	border-left-color:#8ACE00;
 }
 
-		#cd{
+		#disc{
 			height: 500px;
 			width: 500px;
 			background-repeat: no-repeat;
@@ -39,13 +39,48 @@
 <body>
 <div id=bgrnd>
 <center>
-	<div id="cd"></div>
+	<div id="disc"></div>
 <br><br>
 <div id="playbutton"></div>
 </center>
 
  </div> <!--end of background -->
-<audio id="nikes" src="01 Nikes.mp3"></audio>
+<audio id="nikes" src="01 Nikes.mp3"></audio> -->
+
+<audio id="ivy" src="02 Ivy.mp3"></audio>
+
+<audio id="pinkwhite" src="03 Pink + White.mp3"></audio>
+
+<audio id="beyourself" src="04 Be Yourself.mp3"></audio>
+
+<audio id="solo" src="05 Solo.mp3"></audio>
+
+<audio id="skylineto" src="06 Skyline To.mp3"></audio>
+
+<audio id="selfcontrol" src="07 Self Control.mp3"></audio>
+
+<audio id="goodguy" src="08 Good Guy.mp3"></audio>
+
+<audio id="nights" src="09 Nights.mp3"></audio>
+
+<audio id="soloreprise" src="10 Solo (Reprise).mp3"></audio>
+
+<audio id="prettysweet" src="11 Pretty Sweet.mp3"></audio>
+
+<audio id="facebookstory" src="12 Facebook Story.mp3"></audio>
+
+<audio id="closetoyou" src="13 Close to You.mp3"></audio>
+
+<audio id="whiteferrari" src="14 White Ferrari.mp3"></audio>
+
+<audio id="seigfried" src="15 Seigfried.mp3"></audio>
+
+<audio id="godspeed" src="16 Godspeed.mp3"></audio>
+
+<audio id="futurafree" src="17 Futura Free.mp3"></audio>
+
+
+
 
 
 
@@ -61,17 +96,19 @@ playbutton.addEventListener("click", function(){
 
 		if(counter%2==0){
 			nikes.pause()
-			cd.style.transform ="rotate(0deg)";
-			cd.style.transition= "5s"
+			disc.style.transform ="rotate(0deg)";
+			disc.style.transition= "3s"
 
 		}
 		else if (counter%2==1){
 			nikes.play()
-			cd.style.transform= "rotate(1400000000000000000deg)"
-			cd.style.transition= "20s"
+			disc.style.transform= "rotate(60000000000deg)"
+			disc.style.transition= "3608s"
 		}
 
 })
+
+let blonde = ["nikes","ivy","pinkwhite","beyourself","solo","skylineto","selfcontrol","goodguy","nights","soloreprise","prettysweet","facebookstory","closetoyou","whiteferrari","seigfried","godspeed","futurafree"]
 
 
 
