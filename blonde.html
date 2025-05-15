@@ -21,7 +21,16 @@
 	background-image: url(https://i.ebayimg.com/images/g/gh8AAOSwAgNgzEWK/s-l1200.jpg);
 	border-radius: 100%;
 		}
-
+#rewind{
+	z-index: 1;
+			height: 100px;
+			width: 100px;
+			background-image: url(rewind.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin: 20px;
+}
 		#playbutton{
 			z-index: 100;
 	height: 100px;
@@ -30,6 +39,19 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin:20px;
+	background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+		#fastforward{
+			z-index: 1;
+			height: 150px;
+			width: 150px;
+			background-image: url(fastforward.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin: 20px;
 		}
 
 	</style>
@@ -42,75 +64,77 @@
 	<div id="disc"></div>
 <br><br>
 <div id="playbutton"></div>
+<div id="fastforward"></div>
+<div id="rewind"></div>
 </center>
 
  </div> <!--end of background -->
+
+ <!-- tracklist -->
 <audio id="nikes" src="01 Nikes.mp3"></audio> -->
-
 <audio id="ivy" src="02 Ivy.mp3"></audio>
-
 <audio id="pinkwhite" src="03 Pink + White.mp3"></audio>
-
 <audio id="beyourself" src="04 Be Yourself.mp3"></audio>
-
 <audio id="solo" src="05 Solo.mp3"></audio>
-
 <audio id="skylineto" src="06 Skyline To.mp3"></audio>
-
 <audio id="selfcontrol" src="07 Self Control.mp3"></audio>
-
 <audio id="goodguy" src="08 Good Guy.mp3"></audio>
-
 <audio id="nights" src="09 Nights.mp3"></audio>
-
 <audio id="soloreprise" src="10 Solo (Reprise).mp3"></audio>
-
 <audio id="prettysweet" src="11 Pretty Sweet.mp3"></audio>
-
 <audio id="facebookstory" src="12 Facebook Story.mp3"></audio>
-
 <audio id="closetoyou" src="13 Close to You.mp3"></audio>
-
 <audio id="whiteferrari" src="14 White Ferrari.mp3"></audio>
-
 <audio id="seigfried" src="15 Seigfried.mp3"></audio>
-
 <audio id="godspeed" src="16 Godspeed.mp3"></audio>
-
 <audio id="futurafree" src="17 Futura Free.mp3"></audio>
-
-
-
-
-
+<!-- /tracklist -->
 
 
 <script type="text/javascript">
 
 	
 let counter = 0;
+let counter2 = 0;
+
+let blonde = ["nikes","ivy","pinkwhite","beyourself","solo","skylineto","selfcontrol","goodguy","nights","soloreprise","prettysweet","facebookstory","closetoyou","whiteferrari","seigfried","godspeed","futurafree"]
+
 
 playbutton.addEventListener("click", function(){
 		console.log("hi judah!")
 		counter=counter+1;
 
 		if(counter%2==0){
-			nikes.pause()
+		document.getElementById(blonde[counter2]).pause()
 			disc.style.transform ="rotate(0deg)";
 			disc.style.transition= "3s"
 
 		}
 		else if (counter%2==1){
-			nikes.play()
+			document.getElementById(blonde[counter2]).play()
 			disc.style.transform= "rotate(60000000000deg)"
 			disc.style.transition= "3608s"
 		}
 
 })
 
-let blonde = ["nikes","ivy","pinkwhite","beyourself","solo","skylineto","selfcontrol","goodguy","nights","soloreprise","prettysweet","facebookstory","closetoyou","whiteferrari","seigfried","godspeed","futurafree"]
+fastforward.addEventListener("click", function(){
 
+	console.log(blonde[counter2])
+	document.getElementById(blonde[counter2]).pause()
+	counter2=counter2+1
 
+		document.getElementById(blonde[counter2]).play()
+})
+
+rewind.addEventListener("click", function(){
+
+	console.log(blonde[counter2-1])
+	document.getElementById(blonde[counter2]).pause()
+	counter2=counter2-1
+
+		document.getElementById(blonde[counter2]).play()
+})
 
 
 </script>
