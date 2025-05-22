@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#bgrnd{
+	background-color: #000000;
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 800px;
+	z-index: -99;
+	border-left: 75px;
+	border-left-color:#8ACE00;
+}
+
+		#disc{
+			height: 500px;
+			width: 500px;
+			background-repeat: no-repeat;
+			background-size: contain;
+	background-image: url(positions.png);
+	border-radius: 100%;
+		}
+#rewind{
+	z-index: 1;
+			height: 100px;
+			width: 100px;
+			background-image: url(rewind.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin: 20px;
+}
+		#playbutton{
+			z-index: 100;
+	height: 100px;
+	width: 100px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgAY1K1682_xtGI7di8Jfn5t78DrfTCCPIXw&s);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin:20px;
+	background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+		#fastforward{
+			z-index: 1;
+			height: 150px;
+			width: 150px;
+			background-image: url(fastforward.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin: 20px;
+		}
+
+	</style>
+
+
+</head>
+<body>
+<div id=bgrnd>
+<center>
+	<div id="disc"></div>
+<br><br>
+<div id="playbutton"></div>
+<div id="fastforward"></div>
+<div id="rewind"></div>
+</center>
+
+ </div> <!--end of background -->
+
+ <!-- tracklist -->
+<audio src="01. shut up.mp3" id="shutup"></audio>
+<audio src="02. 34+35.mp3" id="3435"></audio>
+<audio src="03. motive (with Doja Cat).mp3" id="motive"></audio>
+<audio src="04. just like magic.mp3" id="magic"></audio>
+<audio src="05. off the table (with The Weeknd).mp3" id="table"></audio>
+<audio src="06. six thirty.mp3" id="630"></audio>
+<audio src="07. safety net (feat. Ty Dolla $ign).mp3" id="safetynet"></audio>
+<audio src="08. my hair.mp3" id="myhair"></audio>
+<audio src="09. nasty.mp3" id="nasty"></audio>
+<audio src="10. west side.mp3" id="west"></audio>
+<audio src="11. love language.mp3" id="lovelang"></audio>
+<audio src="12. positions.mp3" id="positions1"></audio>
+<audio src="13. obvious.mp3" id="obvious"></audio>
+<audio src="14. pov.mp3" id="pov"></audio>
+
+
+<!-- /tracklist -->
+
+
+<script type="text/javascript">
+
+	
+let counter = 0;
+let counter2 = 0;
+
+let positions = ["shutup","3435","","motive","magic","table","630","safetynet","myhair","nasty","west","lovelang","positions1","obvious","pov"]
+
+
+playbutton.addEventListener("click", function(){
+		
+		counter=counter+1;
+
+		if(counter%2==0){
+		document.getElementById(positions[counter2]).pause()
+			disc.style.transform ="rotate(0deg)";
+			disc.style.transition= "3s"
+			console.log("PAUSE")
+		}
+		else if (counter%2==1){
+			document.getElementById(positions[counter2]).play()
+			disc.style.transform= "rotate(60000000000deg)"
+			disc.style.transition= "3360s"
+			console.log("PLAY")
+		}
+
+})
+
+fastforward.addEventListener("click", function(){
+
+	console.log(positions[counter2+1])
+	document.getElementById(positions[counter2]).pause()
+	counter2=counter2+1
+	document.getElementById(positions[counter2+1]).play()
+})
+
+rewind.addEventListener("click", function(){
+
+	console.log(positions[counter2-1] )
+	document.getElementById(positions[counter2]).pause()
+	counter2=counter2-1
+	document.getElementById(positions[counter2-1]).play()
+})
+
+
+</script>
+
+</body>
+</html>
