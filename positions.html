@@ -96,43 +96,45 @@
 let counter = 0;
 let counter2 = 0;
 
-let positions = ["shutup","3435","","motive","magic","table","630","safetynet","myhair","nasty","west","lovelang","positions1","obvious","pov"]
+let positions = ["shutup","3435","motive","magic","table","630","safetynet","myhair","nasty","west","lovelang","positions1","obvious","pov"]
 
 
 playbutton.addEventListener("click", function(){
-		
+		console.log("hi judah!")
 		counter=counter+1;
 
 		if(counter%2==0){
 		document.getElementById(positions[counter2]).pause()
 			disc.style.transform ="rotate(0deg)";
 			disc.style.transition= "3s"
-			console.log("PAUSE")
+
 		}
 		else if (counter%2==1){
 			document.getElementById(positions[counter2]).play()
 			disc.style.transform= "rotate(60000000000deg)"
-			disc.style.transition= "3360s"
-			console.log("PLAY")
+			disc.style.transition= "3608s"
 		}
 
 })
 
 fastforward.addEventListener("click", function(){
 
-	console.log(positions[counter2+1])
+	console.log(positions[counter2])
 	document.getElementById(positions[counter2]).pause()
 	counter2=counter2+1
-	document.getElementById(positions[counter2+1]).play()
+
+		document.getElementById(positions[counter2]).play()
 })
 
 rewind.addEventListener("click", function(){
 
-	console.log(positions[counter2-1] )
+	console.log(positions[counter2-1])
 	document.getElementById(positions[counter2]).pause()
 	counter2=counter2-1
-	document.getElementById(positions[counter2-1]).play()
+
+		document.getElementById(positions[counter2]).play()
 })
+
 
 
 </script>
