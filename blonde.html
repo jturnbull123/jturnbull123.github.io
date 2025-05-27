@@ -45,14 +45,30 @@
 		}
 		#fastforward{
 			z-index: 1;
-			height: 150px;
-			width: 150px;
+			height: 100px;
+			width: 100px;
 			background-image: url(fastforward.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 			display: inline-block;
 			margin: 20px;
 		}
+	#home{
+	top: 0%;
+	height: 50px;
+	width: 50px;
+	background-image: url(https://www.amoeba.com/sized-images/max/500/500/uploads/albums/covers/other/075678604133.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: 1s;
+	position: absolute;
+}	
+	#home:hover{
+		height: 50px;
+		width: 50px;
+		background-image: url(https://www.lovevinylrecords.com/cdn/shop/files/pop-sealed_Zu1dS.jpg?v=1734573610&width=1445);
+		transition: 1s;
+	}
 
 	</style>
 
@@ -60,12 +76,15 @@
 </head>
 <body>
 <div id=bgrnd>
+	<a href="finalproject.html">
+	<div id="home"></div>
+	</a>
 <center>
 	<div id="disc"></div>
 <br><br>
+<div id="rewind"></div>
 <div id="playbutton"></div>
 <div id="fastforward"></div>
-<div id="rewind"></div>
 </center>
 
  </div> <!--end of background -->
