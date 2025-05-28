@@ -73,6 +73,21 @@
 			background-repeat: no-repeat;
 			display: inline-block;
 			margin: 20px;
+	#home{
+		z-index: 1;
+	height: 50px;
+	width: 50px;
+	background-image: url(brat2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: 1s;
+}	
+	#home:hover{
+		height: 50px;
+		width: 50px;
+		background-image: url(bratback.webp);
+		transition: 1s;
+	}
 
 	</style>
 
@@ -80,13 +95,16 @@
 </head>
 <body>
 <div id=bgrnd>
+	<a href="finalproject.html">
+	<div id="home"></div>
+	</a>
 <center>
 	<div id="disc"></div>
 <br><br>
 <div id="rewind"></div>
 <div id="playbutton"></div>
 <div id="fastforward"></div>
-
+		
 </center>
 	<div class="controls-wrapper">
 		<div id="text1">
@@ -104,7 +122,7 @@
 <audio src="07 Calcium.flac" id="calcium"></audio>
 <audio src="08 Sugar And Diesel.flac" id="suagr"></audio>
 <audio src="09 Don't Ask.flac" id="dont"></audio>
-<audio src="10 Security!" id="security"></audio>
+<audio src="10 Security!.flac" id="security"></audio>
 <audio src="11 Time.flac" id="time"></audio>
 <audio src="12 Blue Eyes.flac" id="blueeyes"></audio>
 <audio src="13 Life After Life.flac" id="life"></audio>
